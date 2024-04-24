@@ -1,6 +1,6 @@
 {
   "extends": ["next/core-web-vitals", "@joel-luis/eslint-config/next"],
   "rules": {
-    "@typescript-eslint/no-var-requires": "off"
+    "no-unused-vars": "error"
   }
 }
