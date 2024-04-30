@@ -1,11 +1,11 @@
-import { Restaurant } from "@prisma/client";
-import { BikeIcon, HeartIcon, StarIcon, TimerIcon } from "lucide-react";
-import Image from "next/image";
-import { formatCurrency } from "../_helpers/price";
-import { Button } from "./ui/button";
+import { Restaurant } from '@prisma/client'
+import { BikeIcon, HeartIcon, StarIcon, TimerIcon } from 'lucide-react'
+import Image from 'next/image'
+import { formatCurrency } from '../_helpers/price'
+import { Button } from './ui/button'
 
 interface RestaurantItemProps {
-  restaurant: Restaurant;
+  restaurant: Restaurant
 }
 
 const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
@@ -42,7 +42,7 @@ const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
             <BikeIcon className="text-primary" size={14} />
             <span className="text-xs text-muted-foreground">
               {Number(restaurant.deliveryFee) === 0
-                ? "Entrega grátis"
+                ? 'Entrega grátis'
                 : formatCurrency(Number(restaurant.deliveryFee))}
             </span>
           </div>
@@ -56,7 +56,7 @@ const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RestaurantItem;
+export default RestaurantItem

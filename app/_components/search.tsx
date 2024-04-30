@@ -1,6 +1,6 @@
-import { SearchIcon } from "lucide-react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { SearchIcon } from 'lucide-react'
+import { Button } from './ui/button'
+import { Input } from './ui/input'
 
 const Search = () => {
   return (
@@ -10,7 +10,7 @@ const Search = () => {
         <SearchIcon size={20} />
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default Search;
+export default Search

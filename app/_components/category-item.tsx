@@ -1,8 +1,8 @@
-import { Category } from "@prisma/client";
-import Image from "next/image";
+import { Category } from '@prisma/client'
+import Image from 'next/image'
 
 interface CategoryItemProps {
-  category: Category;
+  category: Category
 }
 
 const CategoryItem = ({ category }: CategoryItemProps) => {
@@ -17,7 +17,7 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
 
       <span className="text-sm font-semibold">{category.name}</span>
     </div>
-  );
-};
+  )
+}
 
-export default CategoryItem;
+export default CategoryItem
