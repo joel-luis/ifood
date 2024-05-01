@@ -8,7 +8,7 @@ interface RestaurantItemProps {
   restaurant: Restaurant
 }
 
-const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
+export function RestaurantItem({ restaurant }: RestaurantItemProps) {
   return (
     <div className="min-w-[266px] max-w-[266px] space-y-3">
       {/* IMAGEM */}
@@ -58,5 +58,3 @@ const RestaurantItem = ({ restaurant }: RestaurantItemProps) => {
     </div>
   )
 }
-
-export default RestaurantItem

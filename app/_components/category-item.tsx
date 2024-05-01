@@ -5,7 +5,7 @@ interface CategoryItemProps {
   category: Category
 }
 
-const CategoryItem = ({ category }: CategoryItemProps) => {
+export function CategoryItem({ category }: CategoryItemProps) {
   return (
     <div className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-3 shadow-md">
       <Image
@@ -19,5 +19,3 @@ const CategoryItem = ({ category }: CategoryItemProps) => {
     </div>
   )
 }
-
-export default CategoryItem

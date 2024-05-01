@@ -1,6 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Image, { ImageProps } from 'next/image'
 
-const PromoBanner = (props: ImageProps) => {
+export function PromoBanner(props: ImageProps) {
   return (
     <Image
       height={0}
@@ -12,5 +13,3 @@ const PromoBanner = (props: ImageProps) => {
     />
   )
 }
-
-export default PromoBanner

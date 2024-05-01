@@ -1,7 +1,7 @@
+import { RestaurantItem } from '@/_components'
 import { db } from '../_lib/prisma'
-import RestaurantItem from './restaurant-item'
 
-const RestaurantList = async () => {
+export async function RestaurantList() {
   // TODO: pegar restaurantes com maior número de pedidos
   const restaurants = await db.restaurant.findMany({ take: 10 })
   return (
@@ -12,5 +12,3 @@ const RestaurantList = async () => {
     </div>
   )
 }
-
-export default RestaurantList
